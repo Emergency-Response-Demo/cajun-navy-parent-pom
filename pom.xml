@@ -10,7 +10,8 @@
     <properties>
         <java.version>1.8</java.version>
         <kie.platform.version>7.7.0.Final-redhat-10</kie.platform.version>
-        <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.17.RELEASE</spring.boot.version>
+        <spring.boot.maven.plugin.version>1.5.17.RELEASE</spring.boot.maven.plugin.version>
         <junit.version>5.3.2</junit.version>
     </properties>
 
@@ -25,11 +26,11 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- BOM's -->
+            <!-- BOMs -->
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-parent</artifactId>
-                <version>${spring.boot.version}</version>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>spring-boot-bom</artifactId>
+                <version>1.5.17.SP1-redhat-00002</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
